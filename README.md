@@ -87,5 +87,6 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 
 -   [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 -   [Create React App](https://create-react-app.dev/)
+-   [Google Fonts](https://fonts.google.com/)
 -   [React](https://reactjs.org/)
 -   [Sass](https://sass-lang.com/)
