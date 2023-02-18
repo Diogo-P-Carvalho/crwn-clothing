@@ -36,6 +36,7 @@ An E-commerce app
 
 ### Built With
 
+-   [Firebase](https://firebase.google.com/)
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
 -   [Sass](https://sass-lang.com/)
@@ -88,6 +89,7 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 
 -   [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 -   [Create React App](https://create-react-app.dev/)
+-   [Firebase](https://firebase.google.com/)
 -   [Google Fonts](https://fonts.google.com/)
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
