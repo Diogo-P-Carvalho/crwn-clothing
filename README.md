@@ -37,6 +37,7 @@ An E-commerce app
 ### Built With
 
 -   [React](https://reactjs.org/)
+-   [React Router](https://reactrouter.com/)
 -   [Sass](https://sass-lang.com/)
 
 
@@ -89,4 +90,5 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [Create React App](https://create-react-app.dev/)
 -   [Google Fonts](https://fonts.google.com/)
 -   [React](https://reactjs.org/)
+-   [React Router](https://reactrouter.com/)
 -   [Sass](https://sass-lang.com/)
