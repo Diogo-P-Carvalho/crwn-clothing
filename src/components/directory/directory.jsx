@@ -1,5 +1,5 @@
-import CategoryItem from "../category-item/category-item";
-import "./directory.scss";
+import CategoryItem from "../category-item/CategoryItem";
+import "./Directory.scss";
 
 export default function Directory({ categories }) {
   return (

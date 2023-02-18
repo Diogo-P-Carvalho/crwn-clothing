@@ -1,4 +1,4 @@
-import "./category.scss";
+import "./CategoryItem.scss";
 
 export default function CategoryItem({ category }) {
   const { title, imageUrl } = category;
