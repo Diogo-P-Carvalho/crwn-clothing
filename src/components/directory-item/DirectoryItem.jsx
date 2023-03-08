@@ -1,10 +1,10 @@
-import "./CategoryItem.scss";
+import "./DirectoryItem.scss";
 
-export default function CategoryItem({ category }) {
+export default function DirectoryItem({ category }) {
   const { title, imageUrl } = category;
 
   return (
-    <div className="category-container">
+    <div className="directory-item-container">
       <div
         className="background-image"
         style={{
@@ -12,7 +12,7 @@ export default function CategoryItem({ category }) {
         }}
       ></div>
 
-      <div className="category-body-container">
+      <div className="body">
         <h2>{title}</h2>
         <p>Shop Now</p>
       </div>
