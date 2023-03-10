@@ -40,6 +40,7 @@ An E-commerce app
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
 -   [Sass](https://sass-lang.com/)
+-   [Styled Components](https://styled-components.com/)
 
 
 <!-- GETTING STARTED -->
@@ -94,3 +95,4 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
 -   [Sass](https://sass-lang.com/)
+-   [Styled Components](https://styled-components.com/)
