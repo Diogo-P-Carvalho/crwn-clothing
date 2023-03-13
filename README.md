@@ -94,5 +94,6 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [Google Fonts](https://fonts.google.com/)
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
+-   [Netlify](https://www.netlify.com)
 -   [Sass](https://sass-lang.com/)
 -   [Styled Components](https://styled-components.com/)
