@@ -4,7 +4,7 @@ An E-commerce app
 <br>
 <a href="https://github.com/Diogo-P-Carvalho/crwn-clothing/blob/main/README.md"><strong>Explore the docs »</strong></a>
 
-<a href="">View Demo</a>
+<a href="https://dapper-moonbeam-e087ef.netlify.app/">View Demo</a>
 ·
 <a href="https://github.com/Diogo-P-Carvalho/crwn-clothing/issues">Report Bug</a>
 ·
