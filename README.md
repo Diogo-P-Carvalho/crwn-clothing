@@ -39,6 +39,7 @@ An E-commerce app
 -   [Firebase](https://firebase.google.com/)
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
+-   [Redux](https://redux.js.org/)
 -   [Sass](https://sass-lang.com/)
 -   [Styled Components](https://styled-components.com/)
 
@@ -94,6 +95,9 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [Google Fonts](https://fonts.google.com/)
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
+-   [React Redux](https://github.com/reduxjs/react-redux)
+-   [Redux](https://redux.js.org/)
+-   [Redux Logger](https://github.com/LogRocket/redux-logger#readme)
 -   [Netlify](https://www.netlify.com)
 -   [Sass](https://sass-lang.com/)
 -   [Styled Components](https://styled-components.com/)
