@@ -40,6 +40,7 @@ An E-commerce app
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
 -   [Redux](https://redux.js.org/)
+-   [Reselect](https://github.com/reduxjs/reselect)
 -   [Sass](https://sass-lang.com/)
 -   [Styled Components](https://styled-components.com/)
 
@@ -98,6 +99,7 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [React Redux](https://github.com/reduxjs/react-redux)
 -   [Redux](https://redux.js.org/)
 -   [Redux Logger](https://github.com/LogRocket/redux-logger#readme)
+-   [Reselect](https://github.com/reduxjs/reselect)
 -   [Netlify](https://www.netlify.com)
 -   [Sass](https://sass-lang.com/)
 -   [Styled Components](https://styled-components.com/)
