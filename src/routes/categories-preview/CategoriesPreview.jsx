@@ -1,24 +1,34 @@
 import { useSelector } from "react-redux";
 
-import { selectCategoriesMap } from "../../store/categories/categories.selector";
+import {
+  selectCategoriesMap,
+  selectCategoriesIsLoading,
+} from "../../store/categories/categories.selector";
 
 import CategoryPreview from "../../components/category-preview/CategoryPreview";
+import Spinner from "../../components/spinner/Spinner";
 
 export default function CategoriesPreview() {
   const categoriesMap = useSelector(selectCategoriesMap);
+  const isLoading = useSelector(selectCategoriesIsLoading);
+  console.log({ isLoading });
 
   return (
     <>
-      {Object.keys(categoriesMap).map((category) => {
-        const products = categoriesMap[category];
-        return (
-          <CategoryPreview
-            key={category}
-            title={category}
-            products={products}
-          />
-        );
-      })}
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        Object.keys(categoriesMap).map((category) => {
+          const products = categoriesMap[category];
+          return (
+            <CategoryPreview
+              key={category}
+              title={category}
+              products={products}
+            />
+          );
+        })
+      )}
     </>
   );
 }
