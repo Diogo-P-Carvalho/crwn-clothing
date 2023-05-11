@@ -3,13 +3,15 @@ import { takeLatest, put, all, call } from "redux-saga/effects";
 import { USER_ACTION_TYPES } from "./user.types";
 
 import {
-  signInSuccess,
-  signInFailed,
+  //signInSuccess,
+  //signInFailed,
   signUpSuccess,
   signUpFailed,
   signOutSuccess,
   signOutFailed,
 } from "./user.action";
+
+import { signInSuccess, signInFailed } from "./user.slice";
 
 import {
   getCurrentUser,
@@ -27,9 +29,16 @@ function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
       userAuth,
       additionalDetails
     );
-    yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
+    //yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
+    yield put(
+      signInSuccess({
+        id: userSnapshot.id,
+        ...userSnapshot.data(),
+        createdAt: new Date(userSnapshot.data().createdAt.toDate()).toString(),
+      })
+    );
   } catch (error) {
-    yield put(signInFailed(error));
+    yield put(signInFailed({ ...error }));
   }
 }
 
@@ -42,7 +51,8 @@ function* signInWithEmail({ payload: { email, password } }) {
     );
     yield call(getSnapshotFromUserAuth, user);
   } catch (error) {
-    yield put(signInFailed(error));
+    console.log("signInWithEmail saga:", error);
+    yield put(signInFailed({ ...error }));
   }
 }
 
@@ -51,7 +61,7 @@ function* signInWithGoogle() {
     const { user } = yield call(signInWithGooglePopup);
     yield call(getSnapshotFromUserAuth, user);
   } catch (error) {
-    yield put(signInFailed(error));
+    yield put(signInFailed({ ...error }));
   }
 }
 
@@ -63,7 +73,7 @@ function* isUserAuthenticated() {
     }
     yield call(getSnapshotFromUserAuth, userAuth);
   } catch (error) {
-    yield put(signInFailed(error));
+    yield put(signInFailed({ ...error }));
   }
 }
 
@@ -106,15 +116,19 @@ function* onSignUpStart() {
 }
 
 function* onEmailSignInStart() {
-  yield takeLatest(USER_ACTION_TYPES.EMAIL_SIGN_IN_START, signInWithEmail);
+  // yield takeLatest(USER_ACTION_TYPES.EMAIL_SIGN_IN_START, signInWithEmail);
+  yield takeLatest("user/emailSignInStart", signInWithEmail);
 }
 
 function* onGoogleSignInStart() {
-  yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
+  // yield takeLatest(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START, signInWithGoogle);
+  yield takeLatest("user/googleSignInStart", signInWithGoogle);
 }
 
 function* onCheckUserSession() {
-  yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
+  // yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAuthenticated);
+  // console.log("user saga onCheckUserSession");
+  yield takeLatest("user/checkUserSession", isUserAuthenticated);
 }
 
 export function* userSagas() {

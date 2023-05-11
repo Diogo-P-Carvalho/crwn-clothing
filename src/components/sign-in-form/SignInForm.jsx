@@ -1,15 +1,20 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
+// import {
+//   googleSignInStart,
+//   emailSignInStart,
+// } from "../../store/user/user.action";
 import {
   googleSignInStart,
   emailSignInStart,
-} from "../../store/user/user.action";
+} from "../../store/user/user.slice";
 
 import FormInput from "../form-input/FormInput";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/Button";
 
 import { SignInContainer, ButtonsContainer } from "./SignInFormStyles";
+import { selectCurrentUser, selectError } from "../../store/user/user.selector";
 
 const defaultFormFields = {
   email: "",
@@ -20,6 +25,14 @@ export default function SignInForm() {
   const dispatch = useDispatch();
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
+  const currentUser = useSelector(selectCurrentUser);
+  const error = useSelector(selectError);
+
+  console.log("SignInForm RENDER", currentUser, error);
+
+  useEffect(() => {
+    console.log("EFFECT", currentUser, error);
+  }, [currentUser, error]);
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -33,9 +46,11 @@ export default function SignInForm() {
     event.preventDefault();
     // create user
     try {
-      dispatch(emailSignInStart(email, password));
-      resetFormFields();
+      dispatch(emailSignInStart({ email, password }));
+      console.log("AFTER DISPATCH");
+      //resetFormFields();
     } catch (error) {
+      console.log("SINGIN FORM ERROR", error);
       if (
         error.code === "auth/wrong-password" ||
         error.code === "auth/user-not-found"

@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 
-import { checkUserSession } from "./store/user/user.action";
+//import { checkUserSession } from "./store/user/user.action";
+import { checkUserSession } from "./store/user/user.slice";
 
 import Navigation from "./routes/navigation/Navigation";
 import Home from "./routes/home/Home";
