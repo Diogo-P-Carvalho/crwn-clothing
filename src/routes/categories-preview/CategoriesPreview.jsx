@@ -11,7 +11,6 @@ import Spinner from "../../components/spinner/Spinner";
 export default function CategoriesPreview() {
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
-  console.log({ isLoading });
 
   return (
     <>
