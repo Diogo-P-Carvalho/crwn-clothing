@@ -45,6 +45,7 @@ An E-commerce app
 -   [Redux Toolkit](https://redux-toolkit.js.org/)
 -   [Reselect](https://github.com/reduxjs/reselect)
 -   [Sass](https://sass-lang.com/)
+-   [Stripe](https://stripe.com/)
 -   [Styled Components](https://styled-components.com/)
 
 
@@ -100,6 +101,7 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [React](https://reactjs.org/)
 -   [React Router](https://reactrouter.com/)
 -   [React Redux](https://github.com/reduxjs/react-redux)
+-   [React Stripe.js](https://github.com/stripe/react-stripe-js#readme)
 -   [Redux](https://redux.js.org/)
 -   [Redux Logger](https://github.com/LogRocket/redux-logger)
 -   [Redux Persist](https://github.com/rt2zz/redux-persist)
@@ -108,4 +110,5 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [Reselect](https://github.com/reduxjs/reselect)
 -   [Netlify](https://www.netlify.com)
 -   [Sass](https://sass-lang.com/)
+-   [Stripe JS](https://stripe.com/docs/js)
 -   [Styled Components](https://styled-components.com/)
