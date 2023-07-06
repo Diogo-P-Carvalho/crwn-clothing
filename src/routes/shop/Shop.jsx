@@ -10,7 +10,7 @@ import {
 
 import CategoriesPreview from "../categories-preview/CategoriesPreview";
 import Category from "../category/Category";
-import { getCategoriesAndDocuments } from "../../utils/firebase/firebase";
+import { getCategoriesAndDocuments } from "../../utils/firebase/firebase.utils";
 
 export default function Shop() {
   const dispatch = useDispatch();

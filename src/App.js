@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import {
   createUserDocumentFromAuth,
   onAuthStateChangedListener,
-} from "./utils/firebase/firebase";
+} from "./utils/firebase/firebase.utils";
 import { setCurrentUser } from "./store/user/user.reducer";
 
 import Navigation from "./routes/navigation/Navigation";
