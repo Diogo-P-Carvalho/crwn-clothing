@@ -6,6 +6,7 @@ import {
 } from "../../store/cart/cart.selector";
 
 import CheckoutItem from "../../components/checkout-item/CheckoutItem";
+import PaymentForm from "../../components/payment-form/PaymentForm";
 
 import {
   CheckoutContainer,
@@ -43,6 +44,7 @@ export default function Checkout() {
       ))}
 
       <Total>Total: ${cartTotal}</Total>
+      <PaymentForm />
     </CheckoutContainer>
   );
 }
