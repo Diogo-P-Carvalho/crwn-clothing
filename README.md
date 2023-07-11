@@ -96,6 +96,7 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 
 -   [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 -   [Create React App](https://create-react-app.dev/)
+-   [Dotenv](https://github.com/motdotla/dotenv#readme)
 -   [Firebase](https://firebase.google.com/)
 -   [Google Fonts](https://fonts.google.com/)
 -   [React](https://reactjs.org/)
@@ -110,5 +111,6 @@ Diogo Carvalho - [Portfolio](https://diogo-p-carvalho.github.io/portfolio/) - [L
 -   [Reselect](https://github.com/reduxjs/reselect)
 -   [Netlify](https://www.netlify.com)
 -   [Sass](https://sass-lang.com/)
+-   [Stripe](https://github.com/stripe/stripe-node)
 -   [Stripe JS](https://stripe.com/docs/js)
 -   [Styled Components](https://styled-components.com/)
