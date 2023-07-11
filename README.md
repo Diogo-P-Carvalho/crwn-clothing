@@ -44,6 +44,7 @@ An E-commerce app
 -   [Redux Thunk](https://github.com/reduxjs/redux-thunk)
 -   [Redux Toolkit](https://redux-toolkit.js.org/)
 -   [Reselect](https://github.com/reduxjs/reselect)
+-   [Netlify](https://www.netlify.com)
 -   [Sass](https://sass-lang.com/)
 -   [Stripe](https://stripe.com/)
 -   [Styled Components](https://styled-components.com/)
